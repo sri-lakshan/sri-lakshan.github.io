@@ -1,0 +1,183 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.subtitle{
+    font-family: 'Caveat', cursive;
+    font-size: 2vw;
+    margin-left: 15px;
+}
+
+.title{
+    font-size: 4vw;
+    font-family: 'Caveat', cursive;
+    margin-left: 15px;
+}
+
+.logo{
+    width: 10%;
+    height: 10%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+/* Apply a background color to the body */
+body {
+    background-image: url("books.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* Style the header */
+header {
+    color: #fff;
+    background-color: #333;
+    padding: 20px 0;
+}
+
+/* Style the question boxes */
+.question-box {
+    background-color: #fff;
+    margin: 20px auto; /* Center the boxes horizontally */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    max-width: 800px; /* Reduce the maximum width */
+}
+
+/* Style the question content */
+.question {
+    text-align: center; /* Center the question text */
+}
+
+.question h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.credits{
+    font-family: 'Roboto', sans-serif;
+}
+
+.qdesc{
+    font-family: 'Lato', sans-serif;
+}
+
+/* Style the actions buttons */
+.actions {
+    display: flex;
+    flex-direction: row; /* Display buttons in a row */
+    justify-content: center; /* Center buttons horizontally within the container */
+    margin-top: 20px; /* Add margin to separate the buttons from the question text */
+}
+
+button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px; /* Add spacing between buttons */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Style the upvote and downvote images */
+.upvote,
+.downvote,
+.share {
+    cursor: pointer;
+    max-height: 30px;
+    max-width: 30px;
+    margin: 0 10px;
+}
+
+#answerPopup{
+    display: none;
+}
+
+.postq{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+#openPopup{
+    background-color: #FE0000;
+}
+/* Styles for the popup container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the popup content */
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Style the form elements */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #22A699;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0074d9;
+}
+
+
+/* Style the footer */
+footer {
+    color: #fff;
+    text-align: right;
+    padding: 10px 0;
+}
+
+

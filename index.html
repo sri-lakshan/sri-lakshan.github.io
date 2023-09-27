@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <title>Question Forum</title>
+</head>
+<body>  
+    <img src="prem.jpg" class="logo">
+    <header>
+        <h1 class="title">Doubt-Clearing Forum</h1>
+        <h3 class="subtitle">Ask away and get your doubts cleared!</h3>
+    </header>
+
+    <section class="question-box">
+        <div class="question">
+            <h2>Project Idea: Smart Home Automation System (looking for team)</h2>
+            <p class="credits">Posted by lakshan in category: Internet of Things</p>
+            <p class="qdesc">In recent years, there has been a growing interest in creating smart homes, where various devices and appliances are connected and controlled intelligently to enhance convenience, energy efficiency, and security. This project involves designing and building a Smart Home Automation System using computer engineering principles. The system will integrate hardware components, such as sensors and actuators, with software to enable remote control and automation of home devices.</p><br>
+            <p class="qdesc">This project combines elements of hardware design, embedded systems programming, networking, and user interface development, making it an excellent opportunity for computer engineering students or enthusiasts to gain hands-on experience in creating a practical and innovative solution for modern living. Additionally, it addresses the growing demand for smart home technology in today's connected world.</p>
+        </div>
+        <div class="actions">
+            <img src="upvote.png" alt="Upvote" class="upvote" id="upvote1">
+            <p id="count1">32</p>
+            <img src="downvote.png" alt="Downvote" class="downvote" id="downvote1">
+            <img src="share.png" alt="Share" class="share">
+            <button class="answer">Answer</button>
+        </div>
+    </section>
+
+    <section class="question-box">
+        <div class="question">
+            <h2>What is the difference  between AC and DC motors?</h2>
+            <p class="credits">Posted by User2 in category: Electronics</p>
+            <p class="qdesc">AC (Alternating Current) and DC (Direct Current) motors are two primary types of electric motors, each with distinct operating principles and characteristics. AC motors rely on alternating current power sources, where the direction of electric current periodically reverses. This reversal typically occurs at a frequency of 50 or 60 times per second, depending on the electrical system's frequency. </p><br>
+            <p class="qdesc">On the other hand, DC motors operate on direct current, where the electric current flows in a continuous, unidirectional manner. Their direction of rotation is determined by the polarity of the DC voltage applied to them, necessitating a reversal of the voltage to change the direction of rotation.</p>
+        </div>
+        <div class="actions">
+            <img src="upvote.png" alt="Upvote" class="upvote" id="upvote2">
+            <p id="count2">42</p>
+            <img src="downvote.png" alt="Downvote" class="downvote" id="downvote2">
+            <img src="share.png" alt="Share" class="share">
+            <button class="answer" id="openAnswerPopup">Answer</button>
+        </div>
+    </section>
+
+    <section class="question-box">
+        <div class="question">
+            <h2>What is the meaning of life?</h2>
+            <p class="credits">Posted by kanav in category: Programming</p>
+            <p class="qdesc">The question of the meaning of life has been a profound and enduring philosophical inquiry that has captivated human minds for centuries. It is a question that has spawned countless theories, religious beliefs, and existential musings, yet it remains a deeply subjective and elusive concept. </p> <br>
+            <p class="qdesc">In essence, the search for the meaning of life is a deeply personal journey, and the answer may evolve over time as one's perspectives and life circumstances change. It is a question that invites introspection, self-discovery, and an exploration of the values and principles that guide our choices and actions. Ultimately, the quest for meaning in life is a testament to the complexity and wonder of human existence, and it remains one of the most enduring and profound questions we grapple with as sentient beings.</p>
+        </div>
+        <div class="actions">
+            <img src="upvote.png" alt="Upvote" class="upvote" id="upvote3">
+            <p id="count3">50</p>
+            <img src="downvote.png" alt="Downvote" class="downvote" id="downvote3">
+            <img src="share.png" alt="Share" class="share">
+            <button class="answer" id="openAnswerPopup">Answer</button>
+        </div>
+    </section>
+    <div class="postq">
+    	<button id="openPopup">Post a Question or a new Project Idea!</button>
+    </div>
+    
+    <div id="questionPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Post a new question</h2><br>
+            <form id="questionForm">
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" required>
+
+                <label for="tags">Tags:</label>
+                <input type="text" id="tags" name="tags" required>
+
+                <label for="question">Question/Project Name: </label>
+                <input type="text" id="question" name="question" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="answerPopup" class="popup">
+	    <div class="popup-content">
+		<span class="close" id="closeAnswerPopup">&times;</span>
+		<h2>Post an Answer</h2>
+		<form id="answerForm">
+		    <label for="answer">Answer:</label>
+		    <textarea id="answer" name="answer" rows="4" required></textarea>
+
+		    <button type="submit">Submit</button>
+		</form>
+	    </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Question Forum</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
